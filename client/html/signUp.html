@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/signUp.css">
+    <title>Sign Up</title>
+</head>
+<body>
+    <div id="logo" >
+        <img src="../images/myMobile.png" alt="" height="200px">
+    </div>
+    <div class="form">
+        <h1 id="title">Sign Up</h1>
+        <div class="container">
+            <input type="text" class="input" required id="fullName" placeholder='Full Name'>
+            <input type="text" class="input" required id="phoneNumber" placeholder='Phone Number'>
+            <input type="email" class="input" required id="email" placeholder='Email'>
+            <input type="password" class="input" required id="password" placeholder='Password'>
+            <input type="password" class="input" required id="confirmPassword" placeholder='Confirm Password'>
+        </div>
+        <input type="checkbox" id="accept" required>
+        <label for="accept" class="accept">Accept Terms And Conditions</label>
+        <button id="signUp" onclick="signUp(event)">Sign Up</button> 
+        <hr>
+        <button id="continueToSignIn" onclick="continueToSignIn(event)">Sign In</button>  
+    </div>   
+    <div id="continueSignUpButton"></div>
+    <div id="signIn"></div>
+    <script src="../script.js"></script>
+    <script src="https://kit.fontawesome.com/a38267edd7.js" crossorigin="anonymous"></script>
+</body>
+</html>

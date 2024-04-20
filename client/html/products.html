@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/products.css">
+    <title>Products</title>
+</head>
+<body onload="productPageInitialization()">
+    <nav>
+        <div class="nav1">
+            <p id="shopping" onclick="beyondShoppingCart()"><i class="fa-solid fa-cart-shopping"></i></p>
+        </div>
+        <div class="nav2">   
+            <p id="profile" onclick="beyondProfile()"><i class="fa-solid fa-user" style="color: #ffffff;"></i></p>
+            <p id="exit" onclick="exit()"><i class="fa-solid fa-right-from-bracket" style="color: #ffffff;"></i></p>
+        </div>
+    </nav>
+    <section>
+        <div class="section1">
+            <div id="logo" >
+                <img src="../images/myMobile.png" alt="" height="150px">
+            </div> 
+        </div>
+        <div class="containerSection">
+            <div class="section2a" >
+                <select id="sort">
+                    <option value="default">Sort by ...</option>
+                    <option value="name">Name</option>
+                    <option value="priceSl">Price: small to large</option>
+                    <option value="priceLs">Price: large to small </option>
+                </select>
+                <button id="sortButton" onclick="sortProducts()"><i class="fa-solid fa-sort"></i></button>
+            </div>
+            <div class="section2b" >
+                <input type="search" id="search" placeholder="Search">
+                <button class="search_button" onclick="searchProducts()"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </div>
+        
+        <div class="section3" ></div>
+        </div>
+    </section>
+
+    <script src="https://kit.fontawesome.com/a38267edd7.js" crossorigin="anonymous"></script>
+    <script src="../script.js"></script>
+</body>
+</html>
